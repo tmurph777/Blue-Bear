@@ -5,6 +5,12 @@
 
 int main()
 {
-    fork();
-    printf("Hello World, %d\n", getpid());
+    if (fork() == 0)
+    {
+        printf("I am the child. My PID is %d\n", getpid());
+    }
+    else
+    {
+        printf("I am the parent. My PID is %d\n", getpid());
+    }
 }
