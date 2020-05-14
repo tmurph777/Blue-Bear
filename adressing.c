@@ -6,5 +6,5 @@ int main()
 {
     int k = 9;
     int *p = &k;
-    printf("%p\n", p);
+    printf("%i\n", *p);
 }
